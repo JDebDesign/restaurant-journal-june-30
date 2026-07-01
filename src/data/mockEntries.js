@@ -1,0 +1,162 @@
+export function makeId(prefix) {
+  return `${prefix}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
+export const CUISINES = [
+  "Italian",
+  "Japanese",
+  "Mexican",
+  "Thai",
+  "American",
+  "French",
+  "Indian",
+  "Mediterranean",
+];
+
+export const mockEntries = [
+  {
+    id: makeId("entry"),
+    restaurantName: "Nonna's Table",
+    location: "Hayes Valley, San Francisco",
+    cuisine: "Italian",
+    dateVisited: "2026-06-12",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Cacio e Pepe",
+        notes: "Perfect pepper kick, not too heavy on cheese.",
+        wouldReorder: true,
+      },
+      {
+        id: makeId("dish"),
+        name: "Burrata Starter",
+        notes: "Good but a bit small for the price.",
+        wouldReorder: false,
+      },
+    ],
+    rating: 5,
+    notes:
+      "Cozy spot, great for date night. Service was attentive without being intrusive. Would bring out-of-town friends here.",
+    tags: ["date night", "splurge"],
+    photos: [],
+    isFavoriteRestaurant: true,
+    createdAt: "2026-06-12T20:14:00.000Z",
+  },
+  {
+    id: makeId("entry"),
+    restaurantName: "Sakura Ramen House",
+    location: "Japantown, San Francisco",
+    cuisine: "Japanese",
+    dateVisited: "2026-06-18",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Tonkotsu Ramen",
+        notes: "Rich broth, noodles cooked just right.",
+        wouldReorder: true,
+      },
+    ],
+    rating: 4,
+    notes: "Quick lunch spot, line moves fast even when busy.",
+    tags: ["quick lunch", "solo"],
+    photos: [],
+    isFavoriteRestaurant: false,
+    createdAt: "2026-06-18T12:31:00.000Z",
+  },
+  {
+    id: makeId("entry"),
+    restaurantName: "El Patron Taqueria",
+    location: "Mission District, San Francisco",
+    cuisine: "Mexican",
+    dateVisited: "2026-06-05",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Al Pastor Tacos",
+        notes: "Smoky, juicy, great char on the pineapple.",
+        wouldReorder: true,
+      },
+      {
+        id: makeId("dish"),
+        name: "Horchata",
+        notes: "A little too sweet for me.",
+        wouldReorder: false,
+      },
+    ],
+    rating: 5,
+    notes: "Best tacos I've had in the city. Cash only, small line at peak hours.",
+    tags: ["quick lunch", "go-to"],
+    photos: [],
+    isFavoriteRestaurant: true,
+    createdAt: "2026-06-05T13:02:00.000Z",
+  },
+  {
+    id: makeId("entry"),
+    restaurantName: "Bangkok Basil",
+    location: "Inner Richmond, San Francisco",
+    cuisine: "Thai",
+    dateVisited: "2026-05-28",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Drunken Noodles",
+        notes: "Asked for medium spice, got mild. Order it spicier next time.",
+        wouldReorder: true,
+      },
+    ],
+    rating: 3,
+    notes: "Decent but inconsistent spice levels between visits.",
+    tags: ["takeout"],
+    photos: [],
+    isFavoriteRestaurant: false,
+    createdAt: "2026-05-28T19:45:00.000Z",
+  },
+  {
+    id: makeId("entry"),
+    restaurantName: "The Grove Diner",
+    location: "Cole Valley, San Francisco",
+    cuisine: "American",
+    dateVisited: "2026-05-20",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Avocado Toast",
+        notes: "Standard, nothing special.",
+        wouldReorder: false,
+      },
+      {
+        id: makeId("dish"),
+        name: "French Toast",
+        notes: "Excellent — cinnamon brioche, real maple syrup.",
+        wouldReorder: true,
+      },
+    ],
+    rating: 4,
+    notes: "Great brunch spot, gets crowded on weekends so go early.",
+    tags: ["brunch", "weekend"],
+    photos: [],
+    isFavoriteRestaurant: false,
+    createdAt: "2026-05-20T10:15:00.000Z",
+  },
+  {
+    id: makeId("entry"),
+    restaurantName: "Le Petit Bistro",
+    location: "Nob Hill, San Francisco",
+    cuisine: "French",
+    dateVisited: "2026-04-30",
+    dishes: [
+      {
+        id: makeId("dish"),
+        name: "Coq au Vin",
+        notes: "Rich, tender, classic preparation.",
+        wouldReorder: true,
+      },
+    ],
+    rating: 5,
+    notes: "Special occasion spot. Pricey but worth it for anniversaries.",
+    tags: ["date night", "splurge"],
+    photos: [],
+    isFavoriteRestaurant: true,
+    createdAt: "2026-04-30T20:00:00.000Z",
+  },
+];
